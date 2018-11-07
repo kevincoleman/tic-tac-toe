@@ -16,7 +16,7 @@ class Game extends Component {
   playMove() {
     if (this.state.spaceValue === '') {
       let played = this.props.whoseMove;
-      let whose = '';
+      let whose;
       this.props.whoseMove === 'X' ? (whose = 'O') : (whose = 'X');
       this.props.switchMove();
       this.setState({ spaceValue: played });
